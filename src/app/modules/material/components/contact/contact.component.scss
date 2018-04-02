@@ -1,0 +1,53 @@
+@import '../../../../../assets/color/colors.scss';
+@import '../../../../../assets/font/fonts.scss';
+.contact-title {
+    font-size: $font_size_32;
+}
+
+.contact-container {
+    box-shadow: 0px 0px 5px $dark_blue;
+    padding: 40px 40px 70px 40px;
+    margin-top: 30px;
+    background-color: $white;
+    font-size: $font_size_16;
+}
+
+.contact-bottom {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: $white;
+    font-size: $font_size_48;
+    box-shadow: 0px 0px 5px $dark_blue;
+    color: $blue;
+    display: flow-root;
+    margin-bottom: 30px;
+}
+
+.facebook a {
+    color: $facebook;
+}
+
+.linkedin a {
+    color: $linkedin;
+}
+
+.twitter a {
+    color: $twitter;
+}
+
+.google a {
+    color: $google;
+}
+
+.instagram a {
+    color: $insta;
+}
+
+.effect {
+    opacity: 0.5;
+    transition-timing-function: linear;
+}
+
+.effect:hover {
+    opacity: 1;
+}

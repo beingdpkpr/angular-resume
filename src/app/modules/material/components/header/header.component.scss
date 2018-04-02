@@ -1,0 +1,62 @@
+@import '../../../../../assets/font/fonts.scss';
+@import '../../../../../assets/color/colors.scss';
+// Modify Default CSS behaviour.
+:host ::ng-deep {
+    .mat-toolbar-multiple-rows {
+        min-height: 40px;
+    }
+}
+
+a:link {
+    color: $dirty_white;
+}
+
+a:visited {
+    color: $dirty_white;
+}
+
+.header-active a {
+    color: $black;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.header {
+    background-color: $white;
+    height: 40px;
+    font-size: $font_size_12;
+    box-shadow: 0px 0px 5px $dirty_white;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+
+.header-row {
+    height: 40px;
+}
+
+.header a {
+    text-decoration: none; // color: $dirty_white;
+}
+
+.header-item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-item a:hover {
+    color: $black;
+}
+
+// Mobile View
+@media screen and (max-width: 480px) {
+    .header-item {
+        margin-left: 10px;
+        margin-right: 10px; // display: none;
+    }
+    .disp-none {
+        display: none;
+    }
+}

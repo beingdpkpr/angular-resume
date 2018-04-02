@@ -1,0 +1,33 @@
+<!-- Portfolio -->
+<div>
+
+  <!-- Portfolio / Title -->
+  <div class="portfolio-title">
+    <i class="fas fa-th-list"></i>&nbsp;
+    <span>Certification</span>
+  </div>
+
+  <!-- Portfolio / Specialization -->
+  <div class="porfolio-content row">
+
+    <!-- Specialization / Card -->
+    <div class="col-lg-4 col-md-6 col-sm-12 cert-card" *ngFor="let items of specialization">
+      <mat-card class="card-main">
+        <mat-card-header class="card-head">
+          <mat-card-title class="title">
+            <b>{{ items.title }}</b>
+          </mat-card-title>
+          <mat-card-subtitle class="subtitle">
+            <i>{{ items.university }}</i>
+          </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="items.image" alt="">
+        <mat-card-actions>
+          <a [href]="items.url" target="_black" class="btn btn-primary">Original Link</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+
+</div>

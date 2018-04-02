@@ -1,0 +1,33 @@
+@import '../../../../../assets/color/colors.scss';
+@import '../../../../../assets/font/fonts.scss';
+.portfolio-title {
+    font-size: $font_size_32;
+}
+
+.porfolio-content {
+    padding: 40px 0px 70px 0px;
+    text-align: center;
+}
+
+.title {
+    font-size: $font_size_14;
+}
+
+.subtitle {
+    font-size: $font_size_12;
+}
+
+.cert-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-main {
+    background-color: #F2F1F4;
+    text-align: center;
+}
+
+.card-main:hover {
+    background-color: #898989;
+    color: $white;
+}

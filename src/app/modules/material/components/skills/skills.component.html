@@ -1,0 +1,68 @@
+<!-- Skills Container -->
+<div>
+
+  <!-- Skills / Title -->
+  <div class="skills-head">
+    <i class="fas fa-cogs"></i>&nbsp;
+    <span>{{ localeStrings.skills }}</span>
+  </div>
+
+  <!-- Skills / Row -->
+  <div class="skill-details">
+
+    <div class="detail-column col-lg-6 col-md-12" *ngFor="let items of skills">
+
+
+      <!-- Row / Left -->
+      <div class="detail-content">
+
+        <!-- Left / Title -->
+        <span class="skill-type">
+          <i class="fas fa-list-ul"></i>&nbsp;
+          <span>{{ items.title }}</span>
+        </span>
+
+        <!-- Left / Spacer -->
+        <hr />
+
+        <!-- Left / List -->
+        <ul class="skill-list">
+          <li *ngFor="let item of items.skill" class="skill-element">
+            <div>{{ item.name }}&nbsp;&nbsp;
+              <span [ngSwitch]="item.star">
+                <span *ngSwitchCase="1">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span *ngSwitchCase="2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span *ngSwitchCase="3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span *ngSwitchCase="4">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span *ngSwitchCase="5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+              </span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

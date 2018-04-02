@@ -1,0 +1,39 @@
+<!-- Home Content -->
+<div class="home-content">
+
+    <!-- Home Content / User Image -->
+    <div class="home-image"></div>
+
+    <!-- Home Content / User Detail -->
+    <div class="home-detail">
+        <div class="detail-name">{{ localeStrings.fullname }}</div>
+        <div class="detail-position">{{ localeStrings.position }}</div>
+        <div>
+            <i>
+                <i class="fas fa-envelope"></i>&nbsp; {{ localeStrings.email }}
+                <span class="spacer"> </span>
+                <i class="fas fa-mobile-alt"></i>&nbsp; {{ localeStrings.mobile}}
+            </i>
+        </div>
+        <div class="detail-bio">{{ localeStrings.bio }}</div>
+        <br>
+        <div>{{ localeStrings.addition }}</div>
+    </div>
+
+    <!-- Home Content / Spacer -->
+    <br>
+
+    <!-- Home Content / Buttons -->
+    <div>
+
+        <!-- Buttons / Download Resume -->
+        <a href="../../../../../assets/DeepakCV.pdf" download>
+            <button class="btn btn-info" type="button">{{ localeStrings.download }}</button>
+        </a>
+
+        <!-- Buttons / Contact Me -->
+        <button class="btn btn-primary" (click)="goContact()" type="button">{{ localeStrings.contact }}</button>
+
+    </div>
+
+</div>

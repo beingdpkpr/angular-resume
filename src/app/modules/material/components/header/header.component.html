@@ -1,0 +1,54 @@
+<!-- Header -->
+<mat-toolbar class="header">
+
+  <!-- Header / Row -->
+  <mat-toolbar-row class="header-row">
+
+    <!-- Header / Spacer -->
+    <span class="example-spacer"></span>
+
+    <!-- Header / Home Link -->
+    <span class="header-item" [routerLinkActive]="['header-active']">
+      <a [routerLink]="['home']">
+        <span>{{ localeStrings.home }}</span>
+      </a>
+    </span>
+
+    <!-- Header / Skills Link -->
+    <span class="header-item" [routerLinkActive]="['header-active']">
+      <a [routerLink]="['skills']">
+        <span>{{ localeStrings.skills }}</span>
+      </a>
+    </span>
+
+    <!-- Header / Works Link -->
+    <span class="header-item" [routerLinkActive]="['header-active']">
+      <a [routerLink]="['works']">
+        <span>{{ localeStrings.works }}</span>
+      </a>
+    </span>
+
+    <!-- Header / Portfolio Link -->
+    <span class="header-item" [routerLinkActive]="['header-active']">
+      <a [routerLink]="['portfolio']">
+        <span>{{ localeStrings.portfolio }}</span>
+      </a>
+    </span>
+
+    <!-- Header / Education Link -->
+    <span class="header-item" [routerLinkActive]="['header-active']">
+      <a [routerLink]="['education']">
+        <span>{{ localeStrings.education }}</span>
+      </a>
+    </span>
+
+    <!-- Header / Contact Link -->
+    <span class="header-item disp-none" [routerLinkActive]="['header-active']">
+      <a [routerLink]="['contact']">
+        <span>{{ localeStrings.contact }}</span>
+      </a>
+    </span>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

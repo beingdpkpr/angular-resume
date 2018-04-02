@@ -1,0 +1,48 @@
+@import '../../../../../assets/color/colors.scss';
+@import '../../../../../assets/font/fonts.scss';
+.detail-column {
+    padding: 0px 10px;
+    margin-bottom: 30px;
+}
+
+.detail-content {
+    box-shadow: 0px 0px 5px $dark_blue;
+    background-color: $blue;
+    padding: 30px;
+}
+
+.skills-head {
+    font-size: $font_size_32;
+}
+
+.skill-details {
+    margin: 30px 0px;
+    color: $white;
+    font-size: $font_size_16;
+}
+
+.skill-type {
+    font-size: $font_size_24;
+}
+
+.skill-element {
+    padding: 10px 20px;
+}
+
+.skill-list {
+    list-style-type: none;
+    font-size: $font_size_14;
+}
+
+@media screen and (max-width: 680px) {
+    .detail-content {
+        padding: 30px 20px;
+    }
+}
+
+// Mobile View
+@media screen and (max-width: 480px) {
+    .skill-details.row {
+        margin: 30px 0px;
+    }
+}

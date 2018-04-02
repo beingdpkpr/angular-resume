@@ -1,0 +1,100 @@
+<!-- Education -->
+<div>
+
+  <!-- Education / Title -->
+  <div class="edu-title">
+    <i class="fas fa-graduation-cap"></i>&nbsp;
+    <span>Education</span>
+  </div>
+
+  <!-- Education / Content -->
+  <div class="edu-content" *ngFor="let items of degrees">
+
+    <!-- Content / Headers -->
+    <div class="edu-header">
+      <div class="headers">
+        <b>{{ items.name }}</b>
+      </div>
+      <div class="subheader" *ngIf="items.branch">
+        <i>{{ items.branch }}</i>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Content / Body -->
+    <div class="edu-body">
+
+      <!-- Body / College -->
+      <div class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>School / College / University: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">
+          <i>{{ items.from }}</i>
+        </span>
+      </div>
+
+      <!-- Body / Separator -->
+      <hr>
+
+      <!-- Body / Grades -->
+      <div class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Passout Grade / Percentage: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">{{ items.grade }}</span>
+      </div>
+
+      <!-- Body / Separator -->
+      <hr>
+
+
+      <div class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Year of Completion: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">{{ items.yop }}</span>
+      </div>
+
+      <!-- Body / Separator -->
+      <hr>
+
+      <!-- Body / Achievements -->
+      <div *ngIf="items.achievement" class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Achievement: </b>
+        </span>
+        <ul class="col-lg-9 col-md-8">
+          <li *ngFor="let a of items.achievement">
+            {{ a }}
+          </li>
+        </ul>
+      </div>
+
+      <!-- Body / Separator -->
+      <hr *ngIf="items.achievement">
+
+      <!-- Body / Projects -->
+      <div *ngIf="items.projects" class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Projects: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">
+          <div *ngFor="let project of items.projects; let i = index;">
+            <div>{{ i + 1}}.
+              <b>{{ project.name }}</b> for "{{ project.subject}}"
+            </div>
+            <ul>
+              <li class="padd-10">{{ project.discription }}</li>
+              <li class="padd-10">Technology Used: {{ project.used }}</li>
+            </ul>
+            <hr>
+          </div>
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

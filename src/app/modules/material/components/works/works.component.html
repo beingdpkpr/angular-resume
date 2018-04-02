@@ -1,0 +1,82 @@
+<!-- Work -->
+<div>
+
+  <!-- Work / Title -->
+  <div class="work-title">
+    <i class="fas fa-briefcase"></i>&nbsp;
+    <span>Works</span>
+  </div>
+
+  <!-- Work / Content -->
+  <div class="work-content" *ngFor="let items of work">
+
+    <!-- Content / Headers -->
+    <div class="work-header">
+
+      <!-- Header / Main -->
+      <div class="headers">
+        <b>{{ items.name }}</b>
+      </div>
+
+      <!-- Header / Sub -->
+      <div class="subheader" *ngIf="items.position">
+        <i>{{ items.position }}</i>
+      </div>
+
+    </div>
+
+    <!-- Content / Divider -->
+    <hr />
+
+    <div class="work-body">
+
+      <div class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Total months of experience: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">
+          {{ items.yom }}
+        </span>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Domain experience: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">
+          {{ items.domain }}
+        </span>
+      </div>
+
+      <hr>
+
+      <div *ngIf="items.projects" class="row">
+        <span class="col-lg-3 col-md-4">
+          <b>Projects: </b>
+        </span>
+        <span class="col-lg-9 col-md-8">
+          <div *ngFor="let project of items.projects; let i = index;">
+            <div>{{ i + 1}}.
+              <b>{{ project.name }}</b>
+            </div>
+            <ul>
+              <li class="padd-10">{{ project.discription }}</li>
+              <li class="padd-10">
+                <u>Responsibility</u>: {{ project.responsibility }}</li>
+              <li class="padd-10">
+                <u>Role</u>: {{ project.role }}</li>
+              <li class="padd-10">
+                <u>Technologies and Tools Used</u>: {{ project.tools }}</li>
+            </ul>
+            <hr>
+          </div>
+        </span>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

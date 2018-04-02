@@ -1,0 +1,5 @@
+applications:
+- name: deepak
+  buildpack: staticfile_buildpack
+  routes:
+   - route: deepak-prasad.cfapps.io
