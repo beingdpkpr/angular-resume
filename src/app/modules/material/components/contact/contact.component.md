@@ -1,8 +1,8 @@
-# Works (`<app-works />`)
+# Contact (`<app-contact />`)
 
 ## Introduction
 
-Displays work experiences.
+Displays contact details.
 
 ## Accessibility Report
 
@@ -28,14 +28,13 @@ None.
 Include the following template:
 
 ```html
-<app-works></app-works>
+<app-contact></app-contact>
 ```
 
 ## Variables
 
 | **No.** | **Name** | **Default Value** | **Description** |
 | - | - | - | - |
-1. | `public work: any` | `Object` | Stores all Work related data.
 
 ## Developer Notes
 
