@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  goLink(link: string) {
+  goLink(link: string): void {
     this.router.navigate([link]);
   }
 
