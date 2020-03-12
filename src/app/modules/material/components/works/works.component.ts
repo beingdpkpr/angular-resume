@@ -49,7 +49,7 @@ export class WorksComponent implements OnInit {
         ]
       }, 
       {
-        'domain': 'Application development',
+        'domain': 'Application development, o9 Platform',
         'name': 'o9 Solutions (Contracted by MIPL)',
         'position': 'Software Engineer - Python',
         'yom': '6 Months (18th Feb, 2019 to 31st July, 2019)',
@@ -64,7 +64,7 @@ export class WorksComponent implements OnInit {
         ]
       },
       {
-        'domain': 'Application development',
+        'domain': 'Application development, o9 Platform',
         'name': 'o9 Solutions',
         'position': 'Senior Software engineer',
         'yom': '8 Months (1st Aug, 2019 to 20th March, 2020)',
@@ -74,7 +74,21 @@ export class WorksComponent implements OnInit {
             'discription': 'Build tenant using APIs calls using the data extracted from Tenant Extractor app.',
             'responsibility': 'Complete end to end development of this system app. Create DDL queries using the data extracted from the Tenant Extractor app and pass this DDLs using an API call.',
             'role': 'Developer',
-            'tools': 'Python, sqlite'
+            'tools': 'Python, sqlite, Antlr, WebAPIs'
+          },
+          {
+            'name': 'Rule Creator',
+            'discription': 'Used for creating multiple rules in the o9 Platform.',
+            'responsibility': 'In o9 Platform, we were unable to create multiple rules at a time. This app takes multiple rules and add them using Web APIs calls.',
+            'role': 'Developer',
+            'tools': 'Python, Antlr, WebAPIs'
+          },
+          {
+            'name': 'Demand Netting Plugin',
+            'discription': 'Used to calculate the demand netting for given Order, Forecast and RTF data.',
+            'responsibility': 'Following the concept of netting, this plugins helps in the consumption of order quantity from the given forecast and RTF to specify the order type.',
+            'role': 'Developer',
+            'tools': 'Python, Pandas'
           }
         ]
       }
