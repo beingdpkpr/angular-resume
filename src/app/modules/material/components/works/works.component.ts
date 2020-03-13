@@ -67,7 +67,7 @@ export class WorksComponent implements OnInit {
         'domain': 'Application development, o9 Platform',
         'name': 'o9 Solutions',
         'position': 'Senior Software engineer',
-        'yom': '8 Months (1st Aug, 2019 to 20th March, 2020)',
+        'yom': '8 Months (1st Aug, 2019 to Present)',
         'projects': [
           {
             'name': 'Tenant Builder',

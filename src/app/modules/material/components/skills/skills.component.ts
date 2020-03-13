@@ -23,11 +23,11 @@ export class SkillsComponent implements OnInit {
         'title': 'Professional Skills',
         'skill': [
           {
-            'name': 'JAVA',
-            'star': 4
+            'name': 'Python',
+            'star': 5
           },
           {
-            'name': 'Python',
+            'name': 'JAVA',
             'star': 4
           },
           {
@@ -39,12 +39,12 @@ export class SkillsComponent implements OnInit {
             'star': 4
           },
           {
-            'name': 'Angular 5 & Bootstrap',
-            'star': 3
+            'name': 'Angular & Bootstrap',
+            'star': 4
           },
           {
             'name': 'Android',
-            'star': 3
+            'star': 2
           },
           {
             'name': 'Docker',
@@ -93,7 +93,7 @@ export class SkillsComponent implements OnInit {
           },
           {
             'name': 'Troubleshoot and Debuging',
-            'star': 3
+            'star': 4
           }
         ]
       },
@@ -102,7 +102,7 @@ export class SkillsComponent implements OnInit {
         'skill': [
           {
             'name': 'Windows',
-            'star': 4
+            'star': 5
           },
           {
             'name': 'Ubuntu',
